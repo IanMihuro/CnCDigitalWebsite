@@ -1,19 +1,34 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
+import BackgroundSection from "../components/Globals/BackgroundSection"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Info from "../components/Home/info"
 
-import { FaAngellist } from "react-icons/fa"
-
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <FaAngellist />
+    <BackgroundSection
+      img={data.img.childImageSharp.fluid}
+      title="C&C DIGITAL"
+      styleClass="default-background"
+    />
+    <Info />
   </Layout>
 )
 
+export const query = graphql`
+  {
+    img: file(
+      relativePath: { eq: "abstract-art-circle-clockwork-414579.jpg" }
+    ) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
 export default IndexPage
