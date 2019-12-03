@@ -16,27 +16,27 @@ export default class Navbar extends Component {
       },
       {
         id: 2,
-        path: "/about-page",
+        path: "/about/",
         text: "About",
       },
       {
         id: 3,
-        path: "/services-page",
+        path: "/services/",
         text: "Services",
       },
       {
         id: 4,
-        path: "/capabilities-page",
+        path: "/capabilities/",
         text: "Capabilities",
       },
       {
         id: 5,
-        path: "/experience-page",
+        path: "/experience/",
         text: "Experience",
       },
       {
         id: 6,
-        path: "/contact-page",
+        path: "/contact/",
         text: "Contact",
       },
     ],
