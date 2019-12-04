@@ -47,7 +47,7 @@ export default function About() {
                 inspire peers and clients with new ideas and new technologies,
                 to go to weird and wonderful places and gain new experiences.
               </p>
-              <p className=" mb-3">
+              <p className=" mb-5">
                 <strong>Give A Shit:</strong> People are relying on you. They
                 trust you. They believe in what you do. Clients and agency
                 alike. You are in a position to influence major brand, millions

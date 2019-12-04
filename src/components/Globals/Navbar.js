@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 
 import logo from "../../images/C&C_logo.png"
-import { FaCartArrowDown } from "react-icons/fa"
+// import { FaCartArrowDown } from "react-icons/fa"
 
 export default class Navbar extends Component {
   state = {
@@ -29,11 +29,11 @@ export default class Navbar extends Component {
         path: "/capabilities/",
         text: "Capabilities",
       },
-      {
-        id: 5,
-        path: "/experience/",
-        text: "Experience",
-      },
+      // {
+      //   id: 5,
+      //   path: "/experience/",
+      //   text: "Experience",
+      // },
       {
         id: 6,
         path: "/contact/",
@@ -82,7 +82,7 @@ export default class Navbar extends Component {
               )
             })}
             <li className="nav-item ml-sm-5">
-              <FaCartArrowDown className="cart-icon" />
+              {/* <FaCartArrowDown className="cart-icon" /> */}
             </li>
           </ul>
         </div>
